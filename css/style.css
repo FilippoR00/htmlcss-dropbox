@@ -15,9 +15,10 @@ body{
 }
 
 /* header  */
-.row{
+header{
     width: 100%;
     position: fixed;
+    top: 0px;
     background-color: white;
 }
 
@@ -86,16 +87,22 @@ header .inizia{
 
 header .inizia a{
     float: right;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
     position: relative;
     right: 50%;
     top: 50%;
     transform: translate(50%, -50%);
-    background-color: #0061ff;
+}
+
+.button{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
     padding: 8px 24px;
+}
+
+.blue{
+    background-color: #0061ff;
+    color: white;
 }
 
 header .inizia a:hover{
@@ -103,6 +110,65 @@ header .inizia a:hover{
 }
 
 /* jumbo  */
+
+.jumbotron{
+    width: 100%;
+    margin-top: 95px;
+    background-color: #b5d1e8;
+    height: 875px;
+}
+
+.jumbotron h1{
+    text-align: left;
+    font-size: 92px;
+    font-weight: 700;
+    padding-top: 95px;
+    padding-bottom: 50px;
+}
+
+.jumbotron .container-jumbo{
+    width: 82%;
+    margin: auto;
+}
+
+.jumbotron .left{
+    float: left;
+    width: 35%;
+}
+
+.jumbotron .left p{
+    font-size: 19px;
+    font-weight: 600;
+    padding-right: 60px;
+    margin-bottom: 50px;
+}
+
+.jumbotron .right{
+    float: left;
+    width: 65%;
+    object-fit: cover;
+}
+
+.jumbotron .trial{
+    font-size: 19px;
+    padding: 10px 22px;
+}
+
+.jumbotron .trial:hover{
+    background-color: #3180ff;
+}
+
+.jumbotron #annulla{
+    font-size: 17px;
+    font-weight: 600;
+    padding: 20px 0px;
+}
+
+.fa-arrow-down{
+    font-size: 50px;
+    margin-top: 35px;
+}
+
 
 /* main  */
 
@@ -131,10 +197,15 @@ header .inizia a:hover{
     background-color: violet;
 } */
 
+/* .debug .jumbotron{
+    height: 900px;
+} */
+
 body.debug{
     background-color: grey;
-    height: 1000px;
+    height: 2000px;
 }
+
 
 
 
