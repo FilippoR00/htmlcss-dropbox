@@ -17,7 +17,12 @@ body{
 
 .container{
     width: 67%;
+    max-width: 1300px;
     margin: auto;
+}
+
+.far, .fas{
+    margin-right: 5px;
 }
 
 /* header  */
@@ -185,18 +190,124 @@ header .inizia a:hover{
 }
 
 .center{
-    margin: 0px 8%;
+    margin: 0px 5%;
 }
 
 main h1{
     width: 100%;
+    font-size: 50px;
+    margin-top: 250px;
+    margin-bottom: 80px;
 }
 
 main .column{
     float: left;
-    width: 28%;
-    height: 600px;
-    border: 1px solid lightgray;
+    width: 29.5%;
+    height: 1150px;
+    border: 2px solid #e1e1e3;
+}
+
+hr{
+    border: 1px solid #e1e1e3;
+}
+
+main .fake-checkbox{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 12.5px;
+}
+
+main .payment-type span{
+    margin-left: 5px;
+    margin-right: 20px;
+    vertical-align: top;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+main .payment-type{
+    margin-bottom: 50px;
+}
+
+main .checked{
+    border: 6px solid #005eff;
+}
+
+main .unchecked{
+    border: 2px solid lightgray;
+}
+
+main .column .user{
+    margin: 15px 0px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+main .column-content{
+    padding: 30px 35px 60px 35px;
+}
+
+main .column-content h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+main .column-content h3{
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+main .column-content .month{
+    color: #73828e;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+main .column-content .features{
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+main .column-content .column-button{
+    padding: 10px 19%;
+    text-decoration: none;
+    margin: 50px 0px;
+    display: block;
+}
+
+main .column-content .column-button:hover{
+    background-color: #3180ff;
+}
+
+main .column-content .features a{
+    color: #0061ff;
+}
+
+main .column-content .features a:hover{
+    color: #3180ff;
+}
+
+main .column-content hr{
+    width: 50px;
+    margin: 40px 0px;
+}
+
+main .column-content li{
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: -15px;
+    margin-top: 20px;
+}
+
+.fa-check{
+    color: blue;
 }
 
 
@@ -232,20 +343,19 @@ main .column{
 } */
 
 body.debug{
-    height: 2000px;
+    height: 3000px;
 }
 
 .container{
-    background-color: rgb(255, 0, 0);
+    /* background-color: rgb(255, 0, 0); */
 }
 
-.debug main h1{
-    height: 250px;
+/* .debug main h1{
     background-color: blue;
 }
 
 .debug main .payment-type{
-    height: 100px;
+    height: 25px;
     background-color: violet;
-}
+} */
 
