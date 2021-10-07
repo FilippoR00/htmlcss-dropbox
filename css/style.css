@@ -6,12 +6,18 @@
 
 body{
     font-family: 'Open Sans', Arial;
+    background-color: white;
 }
 
 .clearfix::after{
     content: "";
     display: table;
     clear: both;
+}
+
+.container{
+    width: 67%;
+    margin: auto;
 }
 
 /* header  */
@@ -169,8 +175,32 @@ header .inizia a:hover{
     margin-top: 35px;
 }
 
-
 /* main  */
+.plans{
+    width: 100%;
+}
+
+.plans-row{
+    width: 100%;
+}
+
+.center{
+    margin: 0px 8%;
+}
+
+main h1{
+    width: 100%;
+}
+
+main .column{
+    float: left;
+    width: 28%;
+    height: 600px;
+    border: 1px solid lightgray;
+}
+
+
+
 
 /* footer  */
 
@@ -202,10 +232,20 @@ header .inizia a:hover{
 } */
 
 body.debug{
-    background-color: grey;
     height: 2000px;
 }
 
+.container{
+    background-color: rgb(255, 0, 0);
+}
 
+.debug main h1{
+    height: 250px;
+    background-color: blue;
+}
 
+.debug main .payment-type{
+    height: 100px;
+    background-color: violet;
+}
 
