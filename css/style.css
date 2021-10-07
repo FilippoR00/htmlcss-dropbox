@@ -8,32 +8,99 @@ body{
     font-family: 'Open Sans', Arial;
 }
 
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* header  */
+.row{
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+
 header .row{
     height: 95px;
 }
 
 header #logo{
     width: 10%;
+    height: 100%;
     float: left;
+}
+
+header img{
+    width: 78%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header ul{
+    line-height: 95px;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0px 21px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+header ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    color: black;
+    text-decoration: underline;
 }
 
 header .left{
     width: 40%;
+    height: 100%;
     float: left;
+    padding-left: 15px;
 }
 
 header .right{
-    width: 40%;
+    width: 45%;
+    height: 100%;
     float: left;
+    padding-right: 25px;
+}
+
+header .right ul{
+    float: right;
 }
 
 header .inizia{
-    width: 10%;
+    width: 5%;
+    height: 100%;
     float: left;
 }
 
+header .inizia a{
+    float: right;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    background-color: #0061ff;
+    padding: 8px 24px;
+}
 
+header .inizia a:hover{
+    background-color: #3180ff;
+}
 
 /* jumbo  */
 
@@ -44,30 +111,30 @@ header .inizia{
 
 
 /* *** DEBUG *** */
-.debug .row{
+/* .debug .row{
     background-color: red;
 }
 
 .debug #logo{
     background-color: blue;
-    height: 100%;
 }
 
 .debug .left{
     background-color: violet;
-    height: 100%;
 }
 
 .debug .right{
     background-color: blue;
-    height: 100%;
 }
 
 .debug .inizia{
     background-color: violet;
-    height: 100%;
-}
+} */
 
+body.debug{
+    background-color: grey;
+    height: 1000px;
+}
 
 
 
