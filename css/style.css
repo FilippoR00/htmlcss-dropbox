@@ -190,7 +190,7 @@ header .inizia a:hover{
 }
 
 .center{
-    margin: 0px 5%;
+    margin: 0px 5.7%;
 }
 
 main h1{
@@ -238,7 +238,7 @@ main .unchecked{
     border: 2px solid lightgray;
 }
 
-main .column .user{
+main .user{
     margin: 15px 0px;
     text-align: center;
     font-size: 18px;
@@ -310,6 +310,42 @@ main .column-content li{
     color: blue;
 }
 
+main .bottom-plan{
+    width: 100%;
+    margin-top: 60px;
+    border: 2px solid #e1e1e3;
+}
+
+main .content-bottom{
+    padding: 30px 25px;
+    position: relative;
+}
+
+main .content-bottom h2{
+    font-size: 30px;
+}
+
+main .content-bottom h3{
+    margin: 20px 0px;
+    font-size: 20px;
+}
+
+main .content-bottom .features{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+main .content-bottom .button.blue{
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    padding: 10px 85px;
+}
+
+main .content-bottom .button.blue:hover{
+    background-color: #3180ff;
+}
 
 
 
@@ -318,6 +354,9 @@ main .column-content li{
 
 
 /* *** DEBUG *** */
+body.debug{
+    height: 3000px;
+}
 /* .debug .row{
     background-color: red;
 }
@@ -342,13 +381,9 @@ main .column-content li{
     height: 900px;
 } */
 
-body.debug{
-    height: 3000px;
-}
-
-.container{
-    /* background-color: rgb(255, 0, 0); */
-}
+/* .container{
+    background-color: rgb(255, 0, 0);
+} */
 
 /* .debug main h1{
     background-color: blue;
@@ -358,4 +393,11 @@ body.debug{
     height: 25px;
     background-color: violet;
 } */
+
+.debug .bottom-plan{
+    /* height: 200px; */
+    /* background-color: tomato; */
+}
+
+
 
