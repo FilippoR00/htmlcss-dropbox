@@ -191,7 +191,7 @@ header .inizia a:hover{
 }
 
 .center{
-    margin: 0px 5.7%;
+    margin: 0px 50px;
 }
 
 main h1{
@@ -203,7 +203,7 @@ main h1{
 
 main .column{
     float: left;
-    width: 29.5%;
+    width: calc((100% - 100px) / 3);
     height: 1150px;
     border: 2px solid #e1e1e3;
 }
