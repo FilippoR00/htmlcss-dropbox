@@ -8,7 +8,32 @@ body{
     font-family: 'Open Sans', Arial;
 }
 
-/* header  */'
+/* header  */
+header .row{
+    height: 95px;
+}
+
+header #logo{
+    width: 10%;
+    float: left;
+}
+
+header .left{
+    width: 40%;
+    float: left;
+}
+
+header .right{
+    width: 40%;
+    float: left;
+}
+
+header .inizia{
+    width: 10%;
+    float: left;
+}
+
+
 
 /* jumbo  */
 
@@ -19,6 +44,29 @@ body{
 
 
 /* *** DEBUG *** */
+.debug .row{
+    background-color: red;
+}
+
+.debug #logo{
+    background-color: blue;
+    height: 100%;
+}
+
+.debug .left{
+    background-color: violet;
+    height: 100%;
+}
+
+.debug .right{
+    background-color: blue;
+    height: 100%;
+}
+
+.debug .inizia{
+    background-color: violet;
+    height: 100%;
+}
 
 
 
