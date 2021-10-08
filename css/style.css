@@ -66,11 +66,11 @@ header ul li{
 header ul li a{
     color: black;
     text-decoration: none;
+    padding: 30px 0px;
 }
 
 header ul li a:hover{
-    color: black;
-    text-decoration: underline;
+    border-bottom: 2px solid black;
 }
 
 header .left{
