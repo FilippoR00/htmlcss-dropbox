@@ -426,7 +426,152 @@ main .team .features a{
     font-size: 18px;
 }
 
+main .column-box{
+    float: left;
+    height: 550px;
+}
 
+main .column-box.center-box{
+    width: 41%;
+    background-color: #f5f5f5;
+    padding: 60px;
+}
+
+main .column-box.center-box img{
+    width: 25%;
+}
+
+main .column-box.center-box hr{
+    margin: 50px 0px;
+    width: 50px;
+}
+
+main .column-box.center-box p{
+    font-size: 19px;
+    font-weight: 600;
+}
+
+main .column-box.center-box p:last-child{
+    margin: 50px 0px;
+}
+
+main .column-box.side-box{
+    width: 29.5%;
+}
+
+main .column-box .row-box{
+    width: 100%;
+    height: 50%;
+}
+
+main .column-box .row-box .img-box{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+main .column-box .row-box .img-box img{
+    width: 150px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.designit{
+    border: 15px solid #d1eace;
+    background-color: #a3d49c;
+}
+
+.asu{
+    background-color: #610227;
+}
+
+.uf{
+    background-color: #0094cf;
+}
+
+.topps{
+    background-color: #ff1515;
+}
+
+.wbr{
+    background-color: #d60019;
+}
+
+.hearst{
+    background-color: #b5d1e8;
+}
+
+.lp{
+    background-color: #051f82;
+}
+
+.cco{
+    background-color: #ffd92c;
+}
+
+main .bottom-banner{
+    width: 100%;
+    background-color: #b5d1e8;
+    padding: 150px 0px;
+}
+
+main .bottom-banner h1{
+    float: left;
+    font-size: 50px;
+    font-weight: 700;
+    width: 50%;
+    color: #610227;
+}
+
+main .bottom-banner a{
+    float: right;
+    border: none;
+    font-size: 20px;
+    padding: 10px 80px;
+}
+
+main .accordion-menu h2{
+    font-size: 40px;
+    margin-top: 150px;
+}
+
+main .accordion-menu ul{
+    list-style: none;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+main .accordion-menu ul li{
+    padding: 30px 0px;
+}
+
+main .accordion-menu ul li a{
+    padding: 30px 0px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+main .accordion-menu ul li div{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+main .accordion-menu li div{
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+}
+
+main .accordion-menu li:target div{
+    max-height: 100px;
+}
 
 /* footer  */
 
@@ -491,8 +636,16 @@ main .team .features a{
     height: 600px;
 } */
 
+/* .debug .column-box{
+    border: 1px solid red;
+} */
 
+/* .debug main .column-box .row-box{
+    border: 1px solid black;
+} */
 
-
+/* .debug .bottom-banner{
+    height: 400px;
+} */
 
 
