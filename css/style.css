@@ -117,7 +117,7 @@ header .inizia a{
     color: white;
 }
 
-header .inizia a:hover{
+.blue:hover{
     background-color: #3180ff;
 }
 
@@ -166,10 +166,6 @@ header .inizia a:hover{
     padding: 10px 22px;
 }
 
-.jumbotron .trial:hover{
-    background-color: #3180ff;
-}
-
 .jumbotron #annulla{
     font-size: 17px;
     font-weight: 600;
@@ -194,18 +190,21 @@ header .inizia a:hover{
     margin: 0px 50px;
 }
 
-main h1{
+main .plans h1{
     width: 100%;
     font-size: 50px;
     margin-top: 250px;
     margin-bottom: 80px;
 }
 
+main .plans .column{
+    height: 1150px;
+    border: 2px solid #e1e1e3;
+}
+
 main .column{
     float: left;
     width: calc((100% - 100px) / 3);
-    height: 1150px;
-    border: 2px solid #e1e1e3;
 }
 
 hr{
@@ -269,7 +268,7 @@ main .column-content .month{
     margin-bottom: 50px;
 }
 
-main .column-content .features{
+main .features{
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: 600;
@@ -280,10 +279,6 @@ main .column-content .column-button{
     text-decoration: none;
     margin: 50px 0px;
     display: block;
-}
-
-main .column-content .column-button:hover{
-    background-color: #3180ff;
 }
 
 main .column-content .features a{
@@ -302,7 +297,7 @@ main .column-content hr{
 main .column-content li{
     margin-bottom: 20px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     margin-left: -15px;
     margin-top: 20px;
 }
@@ -344,8 +339,91 @@ main .content-bottom .button.blue{
     padding: 10px 85px;
 }
 
-main .content-bottom .button.blue:hover{
-    background-color: #3180ff;
+.partner{
+    width: 100%;
+    margin: 180px 0px 140px 0px;
+}
+
+.partner img{
+    width: 55%;
+    float: left;
+}
+
+.partner .partner-column{
+    float: left;
+    width: 45%;
+    padding-left: 60px;
+}
+
+.partner .partner-column h1{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 40px 0px;
+}
+
+.partner .partner-column p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.partner .partner-column a.button.white{
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+.white{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.white:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+}
+
+main .business-option{
+    width: 100%;
+}
+
+main .business-option h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+main .business-row{
+    margin-bottom: 100px;
+}
+
+main .business-option .business-row img{
+    width: 100%;
+}
+
+main .business-option .business-row h2{
+    font-size: 30px;
+}
+
+main .business-option .business-row p{
+    font-size: 19px;
+    font-weight: 600;
+}
+
+main .team h1{
+    font-size: 50px;
+    width: 57%;
+    margin-bottom: 30px;
+}
+
+main .team .features{
+    margin-bottom: 50px;
+}
+
+main .team .features a{
+    color: #0066ff;
+    font-size: 18px;
 }
 
 
@@ -355,9 +433,7 @@ main .content-bottom .button.blue:hover{
 
 
 /* *** DEBUG *** */
-body.debug{
-    height: 3000px;
-}
+
 /* .debug .row{
     background-color: red;
 }
@@ -395,10 +471,28 @@ body.debug{
     background-color: violet;
 } */
 
-.debug .bottom-plan{
-    /* height: 200px; */
-    /* background-color: tomato; */
-}
+/* .debug .bottom-plan{
+    height: 200px;
+    background-color: tomato;
+} */
+
+/* .debug .partner{
+    height: 600px;
+    background-color: grey;
+} */
+
+/* .debug .business-option{
+    height: 1500px;
+    background-color: coral;
+} */
+
+/* .debug .business-option .column{
+    border: 1px solid black;
+    height: 600px;
+} */
+
+
+
 
 
 
