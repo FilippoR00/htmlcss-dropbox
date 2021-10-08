@@ -21,6 +21,11 @@ body{
     margin: auto;
 }
 
+.container-small{
+    width: 82%;
+    margin: auto;
+}
+
 .far, .fas{
     margin-right: 5px;
 }
@@ -136,11 +141,6 @@ header .inizia a{
     font-weight: 700;
     padding-top: 95px;
     padding-bottom: 50px;
-}
-
-.jumbotron .container-jumbo{
-    width: 82%;
-    margin: auto;
 }
 
 .jumbotron .left{
@@ -560,7 +560,6 @@ main .accordion-menu ul li div{
     color: black;
     font-size: 18px;
     font-weight: 600;
-    padding-top: 20px;
 }
 
 main .accordion-menu li div{
@@ -575,8 +574,49 @@ main .accordion-menu li:target div{
 
 /* footer  */
 
+footer{
+    background-color: black;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: white;
+}
 
+footer .container-small.clearfix{
+    margin-bottom: 125px;
+}
 
+footer .column-footer{
+    float: left;
+    width: calc(100% / 5);
+}
+
+footer .column-footer h3{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+footer .column-footer ul li{
+    list-style: none;
+    margin: 10px 0px;
+}
+
+footer hr{
+    width: 125px;
+    margin-bottom: 50px;
+    border: 1px solid gray;
+}
+
+.fa-sort-up{
+    padding-right: 10px;
+}
+
+footer .container-small:last-child{
+    color: gray;
+}
+
+footer .language{
+    padding: 0px 2px;
+}
 /* *** DEBUG *** */
 
 /* .debug .row{
