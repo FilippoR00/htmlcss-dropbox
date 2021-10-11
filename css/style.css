@@ -7,6 +7,8 @@
 body{
     font-family: 'Open Sans', Arial;
     background-color: white;
+    font-size: 19px;
+    font-weight: 600;
 }
 
 .clearfix::after{
@@ -26,8 +28,42 @@ body{
     margin: auto;
 }
 
+.button{
+    font-size: 16px;
+    text-decoration: none;
+    padding: 8px 24px;
+}
+
+.blue{
+    background-color: #0061ff;
+    color: white;
+}
+
+.blue:hover{
+    background-color: #3180ff;
+}
+
 .far, .fas{
     margin-right: 5px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+a{
+    color: #0569ff;
 }
 
 /* header  */
@@ -36,7 +72,7 @@ header{
     position: fixed;
     top: 0px;
     background-color: white;
-    z-index: 1;
+    z-index: 10;
 }
 
 header .row{
@@ -61,21 +97,60 @@ header ul{
     line-height: 95px;
 }
 
-header ul li{
+header nav > ul > li{
     display: inline-block;
     margin: 0px 21px;
-    font-size: 19px;
-    font-weight: 600;
 }
 
-header ul li a{
+header nav > ul > li > a{
     color: black;
     text-decoration: none;
     padding: 30px 0px;
+    position: relative;
 }
 
-header ul li a:hover{
+header nav > ul > li > a:hover{
     border-bottom: 2px solid black;
+}
+
+header .dropdown-content{
+    display: none;
+    width: 300px;
+    position: absolute;
+    padding: 20px;
+    line-height: 40px;
+    background-color: white;
+    border-left: 2px solid black;;
+    list-style: none;
+    z-index: 2;
+}
+
+header .dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.layover{
+    display: none;
+}
+
+header .dropdown:hover .layover{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    position: fixed;
+    top: 95px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+header .dropdown a{
+    color: black;
+    text-decoration: none;
+}
+
+header .dropdown a:hover{
+    text-decoration: underline;
 }
 
 header .left{
@@ -92,7 +167,7 @@ header .right{
     padding-right: 25px;
 }
 
-header .right ul{
+header .right > ul{
     float: right;
 }
 
@@ -110,22 +185,6 @@ header .inizia a{
     transform: translate(50%, -50%);
 }
 
-.button{
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 8px 24px;
-}
-
-.blue{
-    background-color: #0061ff;
-    color: white;
-}
-
-.blue:hover{
-    background-color: #3180ff;
-}
-
 /* jumbo  */
 
 .jumbotron{
@@ -138,7 +197,6 @@ header .inizia a{
 .jumbotron h1{
     text-align: left;
     font-size: 92px;
-    font-weight: 700;
     padding-top: 95px;
     padding-bottom: 50px;
 }
@@ -149,8 +207,6 @@ header .inizia a{
 }
 
 .jumbotron .left p{
-    font-size: 19px;
-    font-weight: 600;
     padding-right: 60px;
     margin-bottom: 50px;
 }
@@ -162,13 +218,11 @@ header .inizia a{
 }
 
 .jumbotron .trial{
-    font-size: 19px;
     padding: 10px 22px;
 }
 
 .jumbotron #annulla{
     font-size: 17px;
-    font-weight: 600;
     padding: 20px 0px;
 }
 
@@ -192,7 +246,6 @@ header .inizia a{
 
 main .plans h1{
     width: 100%;
-    font-size: 50px;
     margin-top: 250px;
     margin-bottom: 80px;
 }
@@ -223,7 +276,6 @@ main .payment-type span{
     margin-right: 20px;
     vertical-align: top;
     font-size: 18px;
-    font-weight: 600;
 }
 
 main .payment-type{
@@ -250,28 +302,23 @@ main .column-content{
 }
 
 main .column-content h2{
-    font-size: 30px;
-    font-weight: 800;
     margin-bottom: 15px;
 }
 
 main .column-content h3{
     font-size: 18px;
-    font-weight: 800;
     margin-bottom: 12px;
 }
 
 main .column-content .month{
     color: #73828e;
     font-size: 16px;
-    font-weight: 600;
     margin-bottom: 50px;
 }
 
 main .features{
     margin-bottom: 20px;
     font-size: 16px;
-    font-weight: 600;
 }
 
 main .column-content .column-button{
@@ -279,14 +326,7 @@ main .column-content .column-button{
     text-decoration: none;
     margin: 50px 0px;
     display: block;
-}
-
-main .column-content .features a{
-    color: #0061ff;
-}
-
-main .column-content .features a:hover{
-    color: #3180ff;
+    font-size: 16px;
 }
 
 main .column-content hr{
@@ -317,18 +357,12 @@ main .content-bottom{
     position: relative;
 }
 
-main .content-bottom h2{
-    font-size: 30px;
-}
-
 main .content-bottom h3{
     margin: 20px 0px;
-    font-size: 20px;
 }
 
 main .content-bottom .features{
     font-size: 16px;
-    font-weight: 600;
     margin-top: 30px;
 }
 
@@ -355,22 +389,17 @@ main .content-bottom .button.blue{
     padding-left: 60px;
 }
 
-.partner .partner-column h1{
-    font-size: 30px;
-    font-weight: 800;
+.partner .partner-column h2{
     margin: 40px 0px;
 }
 
 .partner .partner-column p{
-    font-size: 18px;
-    font-weight: 600;
     line-height: 35px;
     margin-bottom: 30px;
 }
 
 .partner .partner-column a.button.white{
     padding: 10px 30px;
-    font-size: 18px;
 }
 
 .white{
@@ -390,7 +419,6 @@ main .business-option{
 }
 
 main .business-option h1{
-    font-size: 50px;
     margin-bottom: 50px;
 }
 
@@ -402,17 +430,7 @@ main .business-option .business-row img{
     width: 100%;
 }
 
-main .business-option .business-row h2{
-    font-size: 30px;
-}
-
-main .business-option .business-row p{
-    font-size: 19px;
-    font-weight: 600;
-}
-
 main .team h1{
-    font-size: 50px;
     width: 57%;
     margin-bottom: 30px;
 }
@@ -428,11 +446,11 @@ main .team .features a{
 
 main .column-box{
     float: left;
-    height: 550px;
+    height: 60vh;
 }
 
 main .column-box.center-box{
-    width: 41%;
+    width: calc(100% - 120vh);
     background-color: #f5f5f5;
     padding: 60px;
 }
@@ -446,27 +464,22 @@ main .column-box.center-box hr{
     width: 50px;
 }
 
-main .column-box.center-box p{
-    font-size: 19px;
-    font-weight: 600;
-}
-
 main .column-box.center-box p:last-child{
     margin: 50px 0px;
 }
 
 main .column-box.side-box{
-    width: 29.5%;
+    width: 60vh;
 }
 
 main .column-box .row-box{
-    width: 100%;
-    height: 50%;
+    width: 60vh;
+    height: 30vh;
 }
 
 main .column-box .row-box .img-box{
-    width: 50%;
-    height: 100%;
+    width: 30vh;
+    height: 30vh;
     float: left;
 }
 
@@ -476,7 +489,7 @@ main .column-box .row-box .img-box img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+    filter: invert(1);
 }
 
 .designit{
@@ -520,8 +533,6 @@ main .bottom-banner{
 
 main .bottom-banner h1{
     float: left;
-    font-size: 50px;
-    font-weight: 700;
     width: 50%;
     color: #610227;
 }
@@ -529,7 +540,6 @@ main .bottom-banner h1{
 main .bottom-banner a{
     float: right;
     border: none;
-    font-size: 20px;
     padding: 10px 80px;
 }
 
@@ -552,14 +562,7 @@ main .accordion-menu ul li a{
     padding: 30px 0px;
     color: black;
     text-decoration: none;
-    font-size: 18px;
     font-weight: 800;
-}
-
-main .accordion-menu ul li div{
-    color: black;
-    font-size: 18px;
-    font-weight: 600;
 }
 
 main .accordion-menu li div{
@@ -598,6 +601,15 @@ footer .column-footer h3{
 footer .column-footer ul li{
     list-style: none;
     margin: 10px 0px;
+}
+
+footer .column-footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .column-footer ul li a:hover{
+    text-decoration: underline;
 }
 
 footer hr{
